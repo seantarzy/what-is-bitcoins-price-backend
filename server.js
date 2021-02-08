@@ -14,9 +14,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-var routes = require('./api/routes/itemRoutes'); //importing route
+var itemRoutes = require('./api/routes/itemRoutes'); //importing route
+var bitcoinPriceRoutes = require("./api/routes/bitcoinPriceRoutes");
 
-routes(app); //register the route
+bitcoinPriceRoutes(app); //register the route
 
 app.listen(port);
 
