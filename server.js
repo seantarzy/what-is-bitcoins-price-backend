@@ -18,6 +18,7 @@ var itemRoutes = require('./api/routes/itemRoutes'); //importing route
 var bitcoinPriceRoutes = require("./api/routes/bitcoinPriceRoutes");
 
 bitcoinPriceRoutes(app); //register the route
+itemRoutes(app)
 
 app.listen(port);
 
