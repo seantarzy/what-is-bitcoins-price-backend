@@ -1,7 +1,7 @@
 "use strict";
 
 var mongoose = require("mongoose"),
-  Item = mongoose.model("Items");
+  Item = require("../models/itemModel");
 
 
 exports.list_all_items = function (req, res) {
