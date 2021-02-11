@@ -87,7 +87,7 @@ if (nconf.get("month") != month) {
         useQueryString: true,
       });
 
-      secondReq.end(async function (res) {
+      secondReq.end(async function () {
         if (res.error) throw new Error(res.error);
 
         const amazonItem = new Item({
