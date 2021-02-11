@@ -24,10 +24,11 @@ var options = {
 
 var server = https.createServer(options, app);
 
-
 var itemRoutes = require('./api/routes/itemRoutes'); //importing route
 var bitcoinPriceRoutes = require("./api/routes/bitcoinPriceRoutes");
+var homeRoute = require("./api/routes/homeRoute");
 
+homeRoute(app)
 bitcoinPriceRoutes(app); //register the route
 itemRoutes(app)
 
