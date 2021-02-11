@@ -1,10 +1,12 @@
+import { Item } from "./api/models/itemModel";
+
 var express = require("express"),
     fs = require('fs'),
     https = require('https'),
   app = express(),
   port = process.env.PORT || 3000,
     mongoose = require("mongoose"),
-Item = require("./api/models/itemModel"), //created model loading here
+ Item = require("./api/models/itemModel"), //created model loading here
     bodyParser = require("body-parser");
 
     mongoose.Promise = global.Promise;
